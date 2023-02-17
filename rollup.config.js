@@ -1,34 +1,34 @@
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import multiInput from 'rollup-plugin-multi-input';
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import typescript from 'rollup-plugin-typescript2';
-import { terser } from 'rollup-plugin-terser';
-import postcss from 'rollup-plugin-postcss';
-import autoprefixer from 'autoprefixer';
-import cssnano from 'cssnano';
-import copy from 'rollup-plugin-copy';
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import multiInput from "rollup-plugin-multi-input";
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import typescript from "rollup-plugin-typescript2";
+import { terser } from "rollup-plugin-terser";
+import postcss from "rollup-plugin-postcss";
+import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
+import copy from "rollup-plugin-copy";
 
 export default [
   {
     input: [
-      'src/components/**/*.tsx',
-      'src/components/**/index.ts',
-      '!src/components/**/*.test.tsx',
-      '!src/components/**/*.stories.tsx',
+      "src/components/**/*.tsx",
+      "src/components/**/index.ts",
+      "!src/components/**/*.test.tsx",
+      "!src/components/**/*.stories.tsx",
     ],
     output: [
       {
-        dir: 'dist',
-        format: 'esm',
+        dir: "dist",
+        format: "esm",
         sourcemap: true,
       },
     ],
     plugins: [
       multiInput({
-        relative: 'src/components',
+        relative: "src/components",
       }),
-      peerDepsExternal(),
+      peerDepsExternal(), // prevent peerDependencies
       resolve(),
       commonjs(),
       postcss({
@@ -42,9 +42,9 @@ export default [
     ],
   },
   {
-    input: 'src/styles.scss',
+    input: "src/styles.scss",
     output: {
-      file: 'dist/styles.css',
+      file: "dist/styles.css",
     },
     plugins: [
       postcss({
@@ -54,8 +54,8 @@ export default [
       copy({
         targets: [
           {
-            src: ['src/_variables.scss'],
-            dest: 'dist',
+            src: ["src/_variables.scss"],
+            dest: "dist",
           },
         ],
       }),
