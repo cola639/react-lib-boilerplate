@@ -1,7 +1,7 @@
 {
-  "name": "react-component-lib",
-  "version": "1.0.0",
-  "description": "",
+  "name": "mui-lib-cola",
+  "version": "1.0.1",
+  "description": "🗃️ React mui is a react component based on @mui v5",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "style": "dist/styles.scss",
@@ -67,10 +67,22 @@
     "storybook-css-modules-preset": "^1.0.7",
     "style-loader": "^2.0.0",
     "ts-jest": "^26.5.4",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@fontsource/material-icons": "^4.5.4",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.5"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react-dom": ">=16.8.0",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@fontsource/material-icons": "^4.5.4",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.5"
   }
 }
