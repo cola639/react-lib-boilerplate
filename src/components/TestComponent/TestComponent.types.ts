@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 export type TestComponentProps = {
   /**
    * Theme colors
    */
-  theme: 'primary' | 'secondary';
-  children?: React.ReactNode;
-};
+  theme: 'primary' | 'secondary'
+  children?: React.ReactNode
+}

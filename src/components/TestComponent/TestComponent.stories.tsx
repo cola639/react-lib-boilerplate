@@ -1,23 +1,23 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import React from 'react'
+import { Story, Meta } from '@storybook/react'
 
-import TestComponent from '.';
-import { TestComponentProps } from './TestComponent.types';
+import TestComponent from '.'
+import { TestComponentProps } from './TestComponent.types'
 
 export default {
   title: 'TestComponent',
-  component: TestComponent,
-} as Meta;
+  component: TestComponent
+} as Meta
 
-const Template: Story<TestComponentProps> = (args) => <TestComponent {...args} />;
+const Template: Story<TestComponentProps> = args => <TestComponent {...args} />
 
-export const Default = Template.bind({}) as Story<TestComponentProps>;
+export const Default = Template.bind({}) as Story<TestComponentProps>
 Default.args = {
-  theme: 'primary',
-};
+  theme: 'primary'
+}
 
-export const Secondary = Template.bind({});
+export const Secondary = Template.bind({})
 Secondary.args = {
   theme: 'secondary',
-  children: 'Mama',
-};
+  children: 'Mama'
+}

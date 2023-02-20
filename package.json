@@ -27,6 +27,12 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.10",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@fontsource/material-icons": "^4.5.4",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.5",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
     "@storybook/addon-actions": "^6.1.21",
@@ -58,6 +64,7 @@
     "postcss": "^8.2.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-dropzone": "^14.2.3",
     "rollup": "^2.42.1",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-multi-input": "^1.2.0",
@@ -69,13 +76,7 @@
     "storybook-css-modules-preset": "^1.0.7",
     "style-loader": "^2.0.0",
     "ts-jest": "^26.5.4",
-    "typescript": "^4.2.3",
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
-    "@fontsource/material-icons": "^4.5.4",
-    "@fontsource/roboto": "^4.5.8",
-    "@mui/icons-material": "^5.10.6",
-    "@mui/material": "^5.10.5"
+    "typescript": "^4.2.3"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -85,6 +86,7 @@
     "@fontsource/material-icons": "^4.5.4",
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.10.6",
-    "@mui/material": "^5.10.5"
+    "@mui/material": "^5.10.5",
+    "react-dropzone": "^14.2.3"
   }
 }

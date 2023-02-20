@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import { TestComponentProps } from './TestComponent.types';
-import styles from './TestComponent.module.scss';
+import { TestComponentProps } from './TestComponent.types'
+import styles from './TestComponent.module.scss'
 
 // * Storybook can no't catch default export types
 export const TestComponent: React.FC<TestComponentProps> = ({ theme, children }) => (
@@ -12,4 +12,4 @@ export const TestComponent: React.FC<TestComponentProps> = ({ theme, children })
     <h1 className={styles.heading}>Test Component 😢</h1>
     {children}
   </div>
-);
+)
